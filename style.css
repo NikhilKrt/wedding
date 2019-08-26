@@ -1,0 +1,413 @@
+html {
+	width: 100%;
+	font-size: 10px;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+.mpadding{
+	padding: 80px 0;
+}
+
+.hr hr{
+	width: 30%;
+	border:none;
+	height: 2px;
+	background-color: pink;
+}
+
+.content {
+	display: grid;
+}
+
+
+
+.cover, .services, .venues, 
+.bars, .about, .locations,.testimonials, .contact {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.cover-cont, .cover-form, .form, .services-cont, 
+.cover-cont .head, .venues .items, .bars .items, 
+.about-cont, .locations-cont, .contact-cont {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 90%;
+	justify-self: center;
+}
+
+.cover {
+	background-image: linear-gradient(to bottom, rgba(83,103, 202, 0.5), rgba(83,103, 202, 0.5)),  url(img/cover-pic03.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+.cover-cont {
+	grid-row-gap: 15px;
+}
+
+.cover-cont .select select {
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+.cover-form .form {
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 15px;
+}
+
+.cover-cont .head {
+	grid-template-rows: auto;
+	grid-row-gap: 10px;
+}
+
+.cover-cont .btns {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.cover-cont .searches{
+	display: grid;
+}
+
+.cover-cont .app-ops {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: center;
+}
+
+.app-ops .options {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 2fr;
+	grid-template-rows: 1fr;
+}
+
+.app-ops .icons:first-child{
+	grid-column: 2;
+}
+
+.services-cont {
+	width: 90%;
+	justify-self: center;
+	grid-row-gap: 30px;
+}
+
+.services-cont .item, 
+.venues-cont .item,
+.bars-cont .item {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+	width: 90%;
+	justify-self: center;
+}
+img{
+	width: 100%;
+	border-radius: 5px;
+}
+
+.venues .img, .bars .img{
+	width: 93%;
+	justify-self: center;
+}
+
+.services-cont .text, .services .more {
+	text-align: left;
+}
+
+.services-cont .items, 
+.venues-cont .items,
+.bars-cont .items{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 25px;
+}
+
+.services-cont .items .item {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+.venues-cont, .bars {
+	width: 100%;
+}
+
+.venues-cont, .bars {
+	grid-template-rows: auto;
+	grid-row-gap: 20px;
+}
+
+.venues .content, .bars .content{
+	background-color: #ffeeee;
+	padding: 20px 0;
+}
+
+.venues-cont .head, 
+.bars .head {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 15px;
+}
+
+.venues-cont .items .item, 
+.bars-cont .items .item {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.venues-cont .item .details, 
+.bars-cont .item .details{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 1fr 1fr;
+}
+
+.venues-cont .items .points, 
+.venues-cont-cont .items .place, 
+.bars-cont .items .place {
+	grid-row: 2;
+}
+
+.venues-cont .items .points, 
+.bars-cont .items .points{
+	grid-column: 2;
+	grid-row: 1;
+	justify-self: end;
+ 	width: 23px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    display: grid;
+    border-radius: 2px;
+}
+
+.name, .pricing, .place{
+	text-align: left;
+	justify-self: baseline;
+} 
+
+.points p{
+	justify-self:center;
+	align-self: center;
+}
+
+.venues-cont .img, .bar .img {
+    width: 95%;
+    justify-self: center;
+}
+
+.venues-cont .items .details, 
+.venues-cont .pricing,
+.bars-cont .items .details, 
+.bars-cont .pricing {
+	width: 90%;
+	justify-self: center;
+}  
+
+.venues .item, .bars .item {
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+
+.about-cont {
+	grid-template-rows: auto;
+	grid-row-gap: 15px;
+}
+
+.about-cont .items, .loactions-cont .items {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+}
+
+.about-cont .icon img {
+	width: 25%;
+}
+
+.locations-cont .icon img {
+	width: 50%;
+}
+
+.locations-cont .items{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+.contact-cont .headder {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr;
+}
+
+.contact .links {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: left;
+}
+
+.hidden{
+	display: none;
+}
+
+.contact .address {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: left;
+}
+
+.contact .detail {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.contact .social {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.social .icons {
+	justify-self: center;
+	align-self: center;
+}
+
+@media screen and (min-width: 768px){
+	.cover-cont .form {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.cover-cont .select select {
+		width: 100%;
+	}
+
+	.cover-cont .btns {
+		grid-column: 1 / sapn 2;
+   	 	width: 50%;
+    	justify-self: center;
+	}
+
+	.services-cont .items, .venues .items, .bars .items {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.services .items img, .venues .items img, .bars .items img {
+		height: 150px;
+	}
+
+	.about .items {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.locations-cont .items {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+}
+@media screen and (min-width: 992px){
+
+	.cover .form {
+		grid-template-columns: auto auto auto;
+		grid-template-rows: 1fr;
+	}
+	.cover .btns {
+		grid-column: 1;
+	}
+
+	.contact-cont {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-column-gap: 15px;
+	}
+	.contact .address {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.contact .headder {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.contact .more{
+		display: hidden;
+	}
+
+	.contact .content {
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+	}
+
+	.contact .hidden {
+		display: grid;
+	}
+
+	.contact .content .links {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+}
+
+
+
+
+
+.__fWhite {
+	color: #fff;
+}
+
+.__font102{
+	font-size: 1.2em;
+}
+
+.__font108 {
+	font-size: 1.8em;
+}
+
+.__font105 {
+	font-size: 1.5em
+}
+
+.__font1036 {
+	font-size: 1.36em;
+}
+
+.__font105 {
+	font-size: 1.5em;
+}
+
+.__font09 {
+	font-size: 0.9em;
+}
+
+.__font08{
+	font-size: 0.8em;
+}
+
+.__font2 {
+	font-size: 2em;
+}
+
+.__font07 {
+	font-size: 0.7em;
+}
